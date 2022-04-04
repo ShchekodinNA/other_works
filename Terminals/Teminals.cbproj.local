@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.441,C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\mdlForConvp2ToDA.h=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.668,C:\Users\kacpe\Desktop\2-я лаба с формой\mdlForConvp2ToDA.h=C:\Users\kacpe\Desktop\2-я лаба с формой\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.900,C:\Users\kacpe\Desktop\2-я лаба с формой\WindowMtxWorker.cpp=C:\Users\kacpe\Desktop\2-я лаба с формой\main.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.323,C:\Users\kacpe\Desktop\2-я лаба с формой\mrxWws2p&amp;strng.h=C:\Users\kacpe\Desktop\2-я лаба с формой\mylb.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.467,C:\Users\kacpe\Desktop\2-я лаба с формой\Unit2.cpp=C:\Users\kacpe\Desktop\2-я лаба с формой\main.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.774,=C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\load_save.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.571,C:\Users\kacpe\Desktop\2-я лаба с формой\mtxWws2p&amp;strng.h=C:\Users\kacpe\Desktop\2-я лаба с формой\mrxWws2p&amp;strng.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.713,C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\Teminals.cbproj=C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\main_lab-2.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.100,C:\Users\kacpe\Documents\Embarcadero\Studio\Projects\Project2.cbproj=C:\Users\kacpe\Desktop\2-я лаба с формой\Project2.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.467,C:\Users\kacpe\Desktop\2-я лаба с формой\Unit2.dfm=C:\Users\kacpe\Desktop\2-я лаба с формой\main.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.554,C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\Terminals_main.cpp=C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\load_save_main.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.646,C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\load_save.cbproj=C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\main_lab-2.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.792,C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\load_save.cbproj=C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\main_lab-2.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.900,C:\Users\kacpe\Desktop\2-я лаба с формой\WindowMtxWorker.dfm=C:\Users\kacpe\Desktop\2-я лаба с формой\main.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.657,C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\mtxWws2p&amp;strng.cpp=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.554,C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\Terminals_main.h=C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\load_save_main.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.371,=C:\Users\kacpe\Desktop\2-я лаба с формой\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.962,=C:\Users\kacpe\Desktop\2-я лаба с формой\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.884,=C:\Users\kacpe\Desktop\2-я лаба с формой\mylb.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.550,C:\Users\kacpe\Documents\Embarcadero\Studio\Projects\Unit2.h=C:\Users\kacpe\Desktop\2-я лаба с формой\Unit2.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.760,C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\main_lab-2.cbproj=C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\load_save.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.864,C:\Users\kacpe\Documents\Embarcadero\Studio\Projects\Project2PCH1.h=C:\Users\kacpe\Desktop\2-я лаба с формой\LAB2.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.280,=C:\Users\kacpe\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.974,C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\WindowMtxWorker.dfm=C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\load_save_main.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.550,C:\Users\kacpe\Documents\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\kacpe\Desktop\2-я лаба с формой\Unit2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.554,C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\Terminals_main.dfm=C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\load_save_main.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.847,=C:\Users\kacpe\Desktop\2-я лаба с формой\mylb.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.660,C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\mtxWws2p&amp;strng.h=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.900,C:\Users\kacpe\Desktop\2-я лаба с формой\WindowMtxWorker.h=C:\Users\kacpe\Desktop\2-я лаба с формой\main.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.615,C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\main_lab-2.cbproj=C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\load_save.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.408,=C:\Users\kacpe\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.974,C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\WindowMtxWorker.h=C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\load_save_main.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.467,C:\Users\kacpe\Desktop\2-я лаба с формой\Unit2.h=C:\Users\kacpe\Desktop\2-я лаба с формой\main.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.043,C:\Users\kacpe\Desktop\2-я лаба с формой\mdlForConvp2ToDA.cpp=C:\Users\kacpe\Desktop\2-я лаба с формой\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.089,C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\mdlForConvp2ToDA.cpp=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.250,C:\Users\kacpe\Desktop\2-я лаба с формой\main_lab-2.cbproj=C:\Users\kacpe\Desktop\2-я лаба с формой\Project2.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.974,C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\WindowMtxWorker.cpp=C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\load_save_main.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.006,C:\Users\kacpe\Desktop\2-я лаба с формой\mtxWws2p&amp;strng.cpp=C:\Users\kacpe\Desktop\2-я лаба с формой\mylb.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.806,=C:\Users\kacpe\Desktop\Курсовая Программирования\Функция загрузки\load_save.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.550,C:\Users\kacpe\Documents\Embarcadero\Studio\Projects\Unit2.cpp=C:\Users\kacpe\Desktop\2-я лаба с формой\Unit2.cpp</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="load_save.cpp"/>
+    <File Path="load_save.h"/>
+    <File Path="Teminals.cpp"/>
+    <File Path="Terminals_main.cpp"/>
+    <File Path="Terminals_main.cpp"/>
+    <File Path="Terminals_main.dfm"/>
+    <File Path="Terminals_main.h"/>
+  </ProjectSortOrder>
+</BorlandProject>

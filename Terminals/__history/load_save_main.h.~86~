@@ -1,0 +1,81 @@
+//---------------------------------------------------------------------------
+
+#ifndef load_save_mainH
+#define load_save_mainH
+//---------------------------------------------------------------------------
+#include "load_save.h"
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.Dialogs.hpp>
+#include <Vcl.Samples.Spin.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Menus.hpp>
+#include <Vcl.ComCtrls.hpp>
+#include <Vcl.WinXCtrls.hpp>
+#include <Vcl.Grids.hpp>
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <fstream>
+//---------------------------------------------------------------------------
+class TMainForm : public TForm
+{
+__published:	// IDE-managed Components
+	TOpenDialog *OpenDialog;
+	TSpinEdit *EFromT;
+	TStaticText *from;
+	TSpinEdit *EToT;
+	TStaticText *to;
+	TMainMenu *MainMenu;
+	TMenuItem *N1;
+	TMenuItem *Menu_Create;
+	TMenuItem *Menu_LoadB;
+	TMenuItem *N4;
+	TMenuItem *Menu_Save;
+	TMenuItem *Menu_SaveAs;
+	TMenuItem *N7;
+	TMenuItem *Menu_Close;
+	TSaveDialog *SaveDialog;
+	TStatusBar *StatBar;
+	TCheckBox *frmt_nddtme;
+	TSpinEdit *Eperiod;
+	TStaticText *StaticText1;
+	TPanel *Panel_choice;
+	TMenuItem *N2;
+	TMenuItem *Menu_Save_R;
+	TButton *Bobrstart;
+	TStaticText *StaticText2;
+	TSpinEdit *Etrmnls;
+	TGroupBox *GroupBox_from_to;
+	TGroupBox *GroupBox_period;
+	TCheckBox *Cdo;
+	TStringGrid *StrTabl;
+	void __fastcall Menu_CloseClick(TObject *Sender);
+	void __fastcall frmt_nddtmeClick(TObject *Sender);
+	void __fastcall Menu_LoadBClick(TObject *Sender);
+	void __fastcall Menu_SaveClick(TObject *Sender);
+	void __fastcall Menu_SaveAsClick(TObject *Sender);
+	void __fastcall FormCloseQuery(TObject *Sender, bool &CanClose);
+	void __fastcall Menu_Save_RClick(TObject *Sender);
+	void __fastcall CdoClick(TObject *Sender);
+	void __fastcall BobrstartClick(TObject *Sender);
+	void __fastcall EFromTChange(TObject *Sender);
+	void __fastcall EToTChange(TObject *Sender);
+    void __fastcall TMainForm::WRITE(String FNME
+	void __fastcall Menu_CreateClick(TObject *Sender);
+	void __fastcall FormCreate(TObject *Sender);
+
+
+private:	// User declarations
+tmString trmnlsPep;
+tElem termsavlble ;
+bool bSaved;
+public:		// User declarations
+	__fastcall TMainForm(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TMainForm *MainForm;
+//---------------------------------------------------------------------------
+#endif

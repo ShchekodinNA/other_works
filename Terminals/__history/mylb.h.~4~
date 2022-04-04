@@ -1,0 +1,17 @@
+#pragma once
+
+#ifndef mylb_h
+#define mylb_h
+
+#include <System.hpp>
+
+typedef int tElem;
+typedef DynamicArray<char[5]> tmString;
+enum ErrorType
+{
+	no_err, openf_fail, nof_mt, uncor_elem, no_alloc
+};
+ErrorType termsLoad(const String FNAME, tmString & trmnlsPep);
+ErrorType termsSave(const String FNAME,const tmString & trmnlsPep);
+
+#endif

@@ -1,0 +1,132 @@
+//---------------------------------------------------------------------------
+
+#ifndef Terminals_mainH
+#define Terminals_mainH
+//---------------------------------------------------------------------------
+#include "load_save.h"
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.Dialogs.hpp>
+#include <Vcl.Samples.Spin.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Menus.hpp>
+#include <Vcl.ComCtrls.hpp>
+#include <Vcl.WinXCtrls.hpp>
+#include <Vcl.Grids.hpp>
+#include <System.Actions.hpp>
+#include <Vcl.ActnList.hpp>
+#include <Vcl.Buttons.hpp>
+#include <Vcl.CustomizeDlg.hpp>
+#include <Vcl.Mask.hpp>
+//#include <iostream>
+//#include <sstream>
+#include <string>
+//#include <fstream>
+typedef unsigned _int16 tElem;
+struct strctTime
+{ std::string Phio;
+  tElem termPckd,polzl;
+  unsigned _int8 toT,fromT,USlen;
+} ;
+typedef DynamicArray<strctTime> Maspolinf;
+enum ErrorType
+{
+	no_err, openf_fail, no_info, uncor_save, no_alloc
+};
+//---------------------------------------------------------------------------
+class TMainForm : public TForm
+{
+__published:	// IDE-managed Components
+	TOpenDialog *OpenDialog;
+	TSpinEdit *EFromT;
+	TSpinEdit *EToT;
+	TMainMenu *MainMenu;
+	TMenuItem *N1;
+	TMenuItem *Menu_Create;
+	TMenuItem *Menu_LoadB;
+	TMenuItem *N4;
+	TMenuItem *Menu_Save;
+	TMenuItem *Menu_SaveAs;
+	TMenuItem *N7;
+	TMenuItem *Menu_Close;
+	TSaveDialog *SaveDialog;
+	TStatusBar *StatBar;
+	TCheckBox *frmt_nddtme;
+	TSpinEdit *Eperiod;
+	TPanel *Panel_choice;
+	TMenuItem *N2;
+	TMenuItem *Menu_Save_R;
+	TButton *Bobrstart;
+	TSpinEdit *Etrmnls;
+	TGroupBox *GroupBox_from_to;
+	TGroupBox *GroupBox_period;
+	TCheckBox *Cdo;
+	TStringGrid *StrTabl;
+	TStringGrid *DTT;
+	TLabel *Label_DKT;
+	TLabel *Label_from;
+	TLabel *Label_to;
+	TLabel *Label_prom;
+	TPanel *Panel_info_time;
+	TLabel *Label_forDTT;
+	TMemo *MEM;
+	TMenuItem *N3;
+	TMenuItem *Menu_StrT_D;
+	TMenuItem *Menu_StrT_T;
+	TMenuItem *N8;
+	TMenuItem *Menu_DTT_E;
+	TMenuItem *N9;
+	TLabel *Label_RMT;
+	TLabel *Label_forRMT;
+	TBitBtn *B_Save;
+	TEdit *E_Phio;
+	TCheckBox *Ch_autoW;
+	TActionList *ActionList;
+	TAction *SAVE;
+	void __fastcall Menu_CloseClick(TObject *Sender);
+	void __fastcall frmt_nddtmeClick(TObject *Sender);
+	void __fastcall Menu_LoadBClick(TObject *Sender);
+	void __fastcall Menu_SaveAsClick(TObject *Sender);
+	void __fastcall FormCloseQuery(TObject *Sender, bool &CanClose);
+	void __fastcall Menu_Save_RClick(TObject *Sender);
+	void __fastcall CdoClick(TObject *Sender);
+	void __fastcall BobrstartClick(TObject *Sender);
+	void __fastcall EFromTChange(TObject *Sender);
+	void __fastcall Menu_CreateClick(TObject *Sender);
+	void __fastcall FormCreate(TObject *Sender);
+	void __fastcall StrTablDrawCell(TObject *Sender, int ACol, int ARow, TRect &Rect,
+          TGridDrawState State);
+	void __fastcall DTTDrawCell(TObject *Sender, int ACol, int ARow, TRect &Rect,
+          TGridDrawState State);
+	void __fastcall EToTExit(TObject *Sender);
+	void __fastcall Menu_StrT_DClick(TObject *Sender);
+	void __fastcall Menu_StrT_TClick(TObject *Sender);
+	void __fastcall Menu_DTT_EClick(TObject *Sender);
+	void __fastcall StrTablDblClick(TObject *Sender);
+	void __fastcall E_PhioKeyPress(TObject *Sender, System::WideChar &Key);
+	void __fastcall E_PhioExit(TObject *Sender);
+	void __fastcall E_PhioMouseMove(TObject *Sender, TShiftState Shift, int X, int Y);
+	void __fastcall Ch_autoWClick(TObject *Sender);
+	void __fastcall SAVEExecute(TObject *Sender);
+	void __fastcall StrTablRowMoved(TObject *Sender, int FromIndex, int ToIndex);
+
+
+
+
+
+
+private:	// User declarations
+Maspolinf trmnlsPep;
+tElem termsavlble ;
+bool bSaved;
+bool forDTT;
+bool forsort;
+public:		// User declarations
+	__fastcall TMainForm(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TMainForm *MainForm;
+//---------------------------------------------------------------------------
+#endif

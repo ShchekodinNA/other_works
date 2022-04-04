@@ -1,0 +1,168 @@
+#pragma hdrstop
+//#pragma package(smart_init)
+
+#include <iostream>
+
+#include <conio.h>
+//#include <cstdio>
+//#include <cstdlib>
+#include <windows.h>
+//#include "mylb.h"
+#include "Unit1.h"
+
+using namespace std;
+
+int main()
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+/*int errs;
+//double** mtz;
+t2daMatr kkd,copymtx;
+string FNAME="D:\\o.txt";
+//Infmt infmt;
+//returntobs( &infmt);
+ errs=zagrmtEMB(kkd,FNAME);
+
+ //cout<<kkd.get_length()<<"                                      "<<kkd[1].get_length()<<endl<<endl;
+ cout<<vremString(kkd);
+ copymtx= CopyMTXEMB(kkd);
+ bool hg;
+ int pfobr[2];
+ pfobr[0]=2;pfobr[1]=3;
+ obrEMB(kkd, pfobr[0], pfobr[1]) ;
+ cout<<endl<<endl<<vremString(kkd)<<endl<<endl<<vremString(copymtx);
+																 */
+// cout << matr_out(mtz, &infmt)<<endl<<endl<<endl;
+ //bool s=true;
+
+
+//cout<<infmt.strk<<endl<<infmt.stlb<<endl<<endl;*/
+/*kkd.Length = 5;
+for(int i=0;i<kkd.get_length();i++)
+{
+	kkd[i].Length = 5;
+}
+double j=221;
+ kkd[4][4]= j;
+ cout<<kkd[4][4];
+
+ kkd.Length= infmt.strk;
+for(int i=0;i<infmt.strk;i++)
+{kkd[i].Length=infmt.stlb-1;
+for(int j=0;
+}
+cout<<endl<<endl<<"ssd: "<<kkd.get_length()<<endl<<kkd[1].get_length();
+*/
+
+/**/
+
+	Infmt  infmt;
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	int err_t, pfobr[2];
+	t2daMatr mtx,copymtx;
+	cout << "zРабота с матрицей" << endl << "Введите название файла на диске D, окуда будет считана матрица:" << endl;
+	string FNAME;
+	do
+	{
+		cin >> FNAME;
+		FNAME = "D:\\" + FNAME + ".txt";
+		err_t = zagrmtEMB(mtx, FNAME,infmt);
+		switch (err_t)
+		{
+		case openf_fail: cout << "Имя файла указанно не верно!" << endl; break;
+
+		case nof_mt: cout << "Файл пустой!" << endl; break;
+
+		case nonprem_mt:cout << infmt.strk << "-я строка - Нарушена прямоугольность матрицы!" << endl; break;
+
+		case uncor_elem: cout << "ошибка в " << infmt.strk << "-й строке," << infmt.stlb << "-м столбце - элемент: \"" << infmt.k << "\"!" << endl;break;
+
+		case nonsq: cout << "Файл прошёл проверку, однако для выполнения задания нужна квадратная матрица, а не прямоугольная!" << endl;break;
+
+		case no_alloc: cout << "Произошла ошибка выделения памяти!" << endl;break;			//(1)
+
+		}
+
+		if (err_t == no_err) {
+			cout << "Матрица считана без ошибок" << endl;
+			break;
+		}
+		cout << "Введите имя файла заново:" << endl;
+	} while (true);
+	cout<<vremString(mtx);
+
+	cout << "zВведите по каким строке и столбце будет проводится суммирование:" << endl << "Строка:  ";
+	while(true)
+	{   if((cin>>pfobr[0]) || cin.get() == '\n')
+		{
+			if(pfobr[0]>0 &&pfobr[0]<=mtx.get_length()) break;
+		}
+		cout<<"ОШИБКА!! Введено неверное значение для типа int \n";
+		cin.clear(); // сбрасывает все биты потока, тоесть поток становится "хорошим"
+		cin.sync();//Удалим данные из буффера
+		cout<<"Повторите ввод: ";
+	}
+	cout << endl << "Столбец: ";
+	while(true)
+	{   if((cin>>pfobr[1]) || cin.get() == '\n')
+		{
+			if(pfobr[1]>0 &&pfobr[1]<=mtx.get_length()) break;
+		}
+		cout<<"ОШИБКА!! Введено неверное значение для типа int \n";
+		cin.clear(); // сбрасывает все биты потока, тоесть поток становится "хорошим"
+		cin.sync();//Удалим данные из буффера
+		cout<<"Повторите ввод: ";
+	}
+	cout<<pfobr[0]<<"  "<<pfobr[1]<<endl;
+	if(obrEMB(mtx,pfobr[0],pfobr[1]))
+{
+	cout<<"Обработанная матрица: "<<endl<<vremString(mtx)<<endl;
+}
+else cout<<"Ошибка обработки матрицы!"<<endl;
+cout<<"Конец работы программы"<<endl;
+	mtx.Length=0;
+	copymtx.Length = 0;
+
+/*	if (vivodmt(matr, &infmt) == false)
+	{
+		cout << "Ошибка при попытке вывода матрицы" << endl;
+	}
+
+	cout << "Введите по каким строке и столбце будет проводится суммирование:" << endl << "Строка:  ";
+	//pfobr[0] = provr(infmt.strk);		//для частной проверки
+	while (true)						//для универсальной проверки
+	{
+		cin >> FNAME;
+		pfobr[0] = provr(infmt.strk, FNAME);
+		if (pfobr[0] > infmt.strk || pfobr[0] < 1) cout << "Строка указана некорректно, пожалуйста повторите ввод: " << endl;
+		else break;
+	}
+	cout << endl << "Столбец: ";
+	//pfobr[1] = provr(infmt.strk);		//для частной проверки
+	while (true)						//для универсальной проверки
+	{
+		cin >> FNAME;
+		pfobr[1] = provr(infmt.strk, FNAME);
+		if (pfobr[1] > infmt.strk || pfobr[1] < 1) cout << "Строка указана некорректно, пожалуйста повторите ввод: " << endl;
+		else break;
+	}
+	mt_ish = matr_ishalloc(matr, &infmt);
+	if (mt_ish == NULL) cout << "Ошибка копирования матрицы" << endl;
+	//if (mt_ish == NULL) cout << "Работа с копией матрицы невозможна, т.к. была ошибка в её выделении. Программа продолжает работу" << endl;		//(1)
+	Matr_obr(matr, infmt.strk, pfobr[0], pfobr[1]);
+	cout << "Результат:" << endl;
+	cout << matr_out(matr, &infmt);      //6-й пункт в условии к лаб 4
+	cout << endl << "конец работы программы" << endl;
+	//cout << matr_out(mt_ish, &infmt);  //для проверки того, что создаётся копия матрицы
+	if (freemem(matr, infmt.strk) == false)
+	{
+		cout << "На удаление была переданна уже пустая матрица!" << endl;
+	}
+	freemem(mt_ish, infmt.strk);
+    */
+	_getch();
+	return 0;
+}
+

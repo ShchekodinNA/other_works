@@ -1,0 +1,21 @@
+#pragma once
+
+#ifndef mylb_h
+#define mylb_h
+
+#include <System.hpp>
+typedef unsigned _int16 tElem;
+struct strctTime
+{
+  tElem fromT,toT,termPckd;
+}
+//typedef unsigned _int16 tElem;
+typedef DynamicArray<strctTime> tmString;
+enum ErrorType
+{
+	no_err, openf_fail, no_info, uncor_save, no_alloc
+};
+ErrorType termsLoad(const String FNAME, tmString & trmnlsPep,unsigned _int8 termsavlble);
+ErrorType termsSave(const String FNAME,const tmString & trmnlsPep);
+
+#endif

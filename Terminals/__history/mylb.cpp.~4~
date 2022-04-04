@@ -1,0 +1,27 @@
+#pragma hdrstop
+#pragma package(smart_init)
+#include <iostream>
+#include <sstream>
+#include <fstream>
+#include <stdio.h>
+#include <string>
+#include <iomanip>
+#include <locale.h>
+#include <conio.h>
+#include <cstdio>
+#include<cstdlib>
+#include "mylb.h"
+using namespace std;
+ErrorType termsLoad(String FNAME, tmString & trmnlsPep)
+{
+	int poz = 0;
+	ifstream file(AnsiString(FNAME).c_str(),ios::binary);
+	if (!file.is_open()) return openf_fail;
+	ws(file);
+	if (file.eof()) { file.close();return no_info; }
+	bool h = true;
+	stringstream kk;
+	char s;
+	double z;
+    return no_err;
+	}

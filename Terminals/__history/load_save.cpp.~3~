@@ -1,0 +1,64 @@
+#pragma hdrstop
+#pragma package(smart_init)
+#include <iostream>
+//#include <sstream>
+#include <fstream>
+#include <stdio.h>
+#include <string>
+//#include <iomanip>
+//#include <locale.h>
+//#include <conio.h>
+//#include <cstdio>
+//#include<cstdlib>
+#include "load_save.h"
+using namespace std;
+ErrorType termsLoad(String FNAME, tmString & trmnlsPep, unsigned _int8 termsavlble)
+{
+	ifstream ifile(AnsiString(FNAME).c_str(),ios::binary);
+	if (!ifile.is_open()) return openf_fail;
+	ws(ifile);
+	if (ifile.eof()) { ifile.close();return no_info; }
+	//stringstream kk;
+	int razm = 0;
+	while (!ifile.eof())
+	{
+		razm++;
+		ifile.get();
+	};
+	ifile.clear();
+	razm -= 1;
+	if ((razm) % sizeof(tElem) != 0)
+	{   ifile.close();
+		return uncor_save;
+	}
+	//razm = razm / sizeof(tElem);
+	ifile.seekg(0);
+	ifile.read((char *)&termsavlble, sizeof(unsigned _int16));
+	try{
+	   while (!ifile.eof())
+		   {  trmnlsPep.Length +=1;
+			 ifile.read((char *)&trmnlsPep[trmnlsPep.Length -1].termPckd, sizeof(tElem));
+			 ifile.read((char *)&trmnlsPep[trmnlsPep.Length -1].fromT, sizeof(tElem));
+			 ifile.read((char *)&trmnlsPep[trmnlsPep.Length -1].toT, sizeof(tElem));
+		   };
+	}catch(...) {
+		trmnlsPep.Length = 0;
+		ifile.close();
+		return no_alloc;
+	}
+	return no_err;
+	}
+	ErrorType termsSave(const String FNAME,const tmString & trmnlsPep,unsigned _int16 termsavlble)
+	{
+        ifstream ifile(AnsiString(FNAME).c_str(),ios::binary);
+	if (!ifile.is_open()) return openf_fail;
+	ws(ifile);
+	if (ifile.eof()) { ifile.close();return no_info; }
+	//stringstream kk;
+	int razm = 0;
+	while (!ifile.eof())
+
+
+
+
+    }

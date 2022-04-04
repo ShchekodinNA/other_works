@@ -1,0 +1,26 @@
+#pragma once
+
+#ifndef mylb_h
+#define mylb_h
+
+//#pragma hdrstop
+
+#include <string>
+
+#include <System.hpp>
+
+typedef int tElem;
+typedef DynamicArray<char[5]> tmString;
+struct personalinf
+{
+	int beg; int end;
+    int term;
+};
+enum ErrorType
+{
+	no_err, openf_fail, nof_mt, uncor_elem, no_alloc
+};
+std::string matr_out(double **&mtx, Infmt *infmt, int precision = 0, int width = 10);
+ErrorType termscanf(std::string FNAME, tmString & trmnlsPep);
+
+#endif

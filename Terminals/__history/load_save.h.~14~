@@ -1,0 +1,24 @@
+#pragma once
+
+#ifndef mylb_h
+#define mylb_h
+
+#include <System.hpp>
+typedef unsigned _int16 tElem;
+struct strctTime
+{
+  tElem termPckd;
+  unsigned _int8 toT,fromT;
+} ;
+typedef bool b[24]
+typedef DynamicArray<strctTime> tmString;
+typedef DynamicArray<bool b[24]> obrBmtx;
+enum ErrorType
+{
+	no_err, openf_fail, no_info, uncor_save, no_alloc
+};
+//typedef DynamicArray<DynamicArray<bool> >  mtxforedit;
+ErrorType termsLoad(const String FNAME, tmString & trmnlsPep,unsigned _int16 termsavlble);
+ErrorType termsSave(const String FNAME,const tmString & trmnlsPep,unsigned _int16 termsavlble);
+
+#endif
